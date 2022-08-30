@@ -59,6 +59,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          sudo docker pull mgarf/infra_actions
+          sudo docker pull mspitsyn/infra_actions
           sudo docker stop
-          sudo docker run --rm -d -p 5000:5000 mgarf/infra_actions      
+          sudo docker run --rm -d -p 5000:5000 mspitsyn/infra_actions
