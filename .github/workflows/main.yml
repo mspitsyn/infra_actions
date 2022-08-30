@@ -46,7 +46,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: mgraf/infra_actions:v1.2022
+          tags: mspitsyn/infra_actions:v1.2022
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
