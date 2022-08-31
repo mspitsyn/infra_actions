@@ -2,7 +2,9 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('У меня получилось обновить проект и автоматически его запустить на сервере!!!')
+    return HttpResponse(
+        'У меня получилось автоматически обновить проект на сервере!!!'
+    )
 
 
 def second_page(request):
